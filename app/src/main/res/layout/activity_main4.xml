@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trapezium Area"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginBottom="20dp"
+        android:background="#000000"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/text21"
+            android:textSize="18dp"
+            android:text="Longer base"/>
+
+        <EditText
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text21"
+            android:inputType="numberDecimal"
+            android:id="@+id/edit21"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/text22"
+            android:layout_marginLeft="15dp"
+            android:textSize="18dp"
+            android:layout_toRightOf="@+id/edit21"
+            android:text="Shorter base"/>
+
+        <EditText
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text22"
+            android:inputType="numberDecimal"
+            android:id="@+id/edit22"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/text23"
+            android:textSize="18dp"
+            android:text="Acute angle"/>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/text23"
+            android:id="@+id/spinner41"
+            android:spinnerMode="dropdown"
+            android:background="@android:drawable/btn_dropdown"/>
+
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:inputType="numberDecimal"
+            android:layout_toRightOf="@+id/spinner41"
+            android:id="@+id/edit23"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button21"
+        android:layout_gravity="center_horizontal"
+        android:text="Calculate"
+        android:layout_marginTop="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text24"
+        android:layout_marginTop="30dp"
+        android:text="Area"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button22"
+        android:text="Return to main menu"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
